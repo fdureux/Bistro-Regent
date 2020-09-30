@@ -19,7 +19,28 @@ body {
 .wrapper {
     background-color: var(--light);
     display: flex;
+}   
+
+#phiphi {
+    justify-content: space-between;
+    background-color: var(--dark);
+    color: var(--light);
 }
+
+#phiphi h1 {
+    justify-content: center;
+    font-family: 'MontSerrat', sans-serif;
+}
+#phiphi p {
+    text-align: justify;
+    width: 50%;
+    float: right;
+}
+
+#phiphi img {
+    max-width: 50%;
+    height: auto;
+    }
 
 @media screen and (min-width: 1200px) {
     .wrapper {
