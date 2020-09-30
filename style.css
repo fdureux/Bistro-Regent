@@ -41,6 +41,11 @@ label{
     color: var(--color);
 }
 
+#submit_btn:hover{
+    cursor: pointer;
+    box-shadow: var(--dark) 0px 5px 15px;
+}
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 70rem;
