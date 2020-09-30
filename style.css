@@ -1,6 +1,6 @@
 :root { 
 /* color variables */
-    --light : #ffffdd;
+    --light : #ffffed;
     --dark : #333;
     --color : #bac94c;
 }
@@ -8,18 +8,90 @@
 html, body {
     margin:0;
     padding:0;
-    }
+}
 
 body {
     background-color: lightgrey;
     color: var(--dark);
+    font-family: 'calibri', sans-serif;
 }
 
 .wrapper {
     background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+}   
+
+
+#phiphi {
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
 }
 
-/*FORMULAIRE*/
+#phiphi h1 {
+    text-align: center;
+}
+
+#phiphi .banner {
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+#phiphi .text {
+    text-align: justify;
+    width: 50%;
+    float: right;
+    font-size: 0.9rem;
+}
+
+#phiphi img {
+    max-width: 50%;
+    height: auto;
+    }
+
+/* CARTE DES BOISSONS */
+
+h2 {
+    text-transform: uppercase;
+}
+/* Vins */
+
+.bloc-container{
+    width: 90%;
+    justify-content: center;
+}
+ .vin {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 5fr 1fr  1fr 1fr;
+    border-bottom: 1px solid var(--color);
+    padding: 0.5rem;
+}
+
+.red-round {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #6f0d0d;
+}
+
+.rose-round {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #e96f51;
+}
+
+.white-round {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #e6d67c;
+}
+
+
+    /*FORMULAIRE*/
 form{
     display: grid;
     grid-template-columns: 20rem;
@@ -46,14 +118,24 @@ label{
     box-shadow: var(--dark) 0px 5px 15px;
 }
 
+
 @media screen and (min-width: 1200px) {
     .wrapper {
-        width: 70rem;
+        width: 70%;
         margin: auto;
         box-shadow:2px 2px 10px gray; 
         -moz-box-shadow:2px 2px 10px gray;
         -webkit-box-shadow:2px 2px 10px gray;
         border-radius: 2px;
+    }
 }
+
+@media screen and (max-width: 698px) {
+    #optional{
+        display: none;
+    }
+
+    .bloc-container {
+        width: 95%;
     }
 }
