@@ -19,6 +19,24 @@ body {
     background-color: var(--light);
 }
 
+/*FORMULAIRE*/
+form{
+    display: grid;
+    grid-template-columns: 20rem;
+    justify-content: center;
+}
+
+label{
+    margin: .5rem;
+}
+
+#submit_btn{
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem;
+    justify-self: end;
+}
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 70rem;
