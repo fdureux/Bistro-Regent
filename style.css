@@ -15,6 +15,10 @@ body {
     color: var(--dark);
 }
 
+li{
+    list-style: none;
+}
+
 .wrapper {
     background-color: var(--light);
 }
