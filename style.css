@@ -19,6 +19,33 @@ body {
     background-color: var(--light);
 }
 
+/* Footer */
+footer {
+    border : solid black 1px;
+    height: 200px;
+    background-color:var(--dark);  
+    list-style: none;  
+}
+footer a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.footer1 h1{
+    color: var(--color);
+}
+footer .footer1{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .listeregent{
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+
+}
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 70rem;
@@ -29,4 +56,3 @@ body {
         border-radius: 2px;
 }
     }
-}
