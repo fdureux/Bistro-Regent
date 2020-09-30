@@ -32,9 +32,13 @@ label{
 
 #submit_btn{
     width: 5rem;
-    height: 2rem;
+    height: 2.5rem;
     margin: 1rem;
     justify-self: end;
+    border-radius: 13px;
+    border: 2px solid var(--color);
+    background-color: var(--dark);
+    color: var(--color);
 }
 
 @media screen and (min-width: 1200px) {
