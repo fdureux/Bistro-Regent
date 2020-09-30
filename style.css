@@ -15,8 +15,26 @@ body {
     color: var(--dark);
 }
 
+header{
+    display: flex;
+    background-color: var(--dark);
+    padding: .5rem;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+}
+
 li{
     list-style: none;
+}
+
+#logo_bistrot{
+    height: 3rem;
+    padding: 1rem;;
+    border: 1px solid var(--color);
+    border-radius: 50%;
 }
 
 .wrapper {
