@@ -15,16 +15,25 @@ body {
     color: var(--dark);
 }
 
+.wrapper {
+    background-color: var(--light);
+}
+
 header{
     display: flex;
-    /* flex-wrap: wrap; */
+    max-width: 100%;
     background-color: var(--dark);
     padding: .5rem;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu_burger{
+#burger_container{
+    height: 48px;
+    width: 48px;
+}
+
+#burger_btn{
     height: 3rem;
 }
 
@@ -33,23 +42,28 @@ ul{
 }
 
 .nav_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5rem;
     list-style: none;
     height: 2rem;
-    width: 5rem;
+    width: 8rem;
     text-align: center;
-    border: 1px solid var(--color);
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    color: var(--color);
+    text-decoration: none;
 }
 
 #logo_bistrot{
     height: 3rem;
-    padding: 1rem;;
+    padding: 1rem;
+    margin:  .5rem 2rem;
     border: 1px solid var(--color);
     border-radius: 50%;
 }
 
-.wrapper {
-    background-color: var(--light);
-}
 
 @media screen and (min-width: 1200px) {
     .wrapper {
@@ -59,6 +73,18 @@ ul{
         -moz-box-shadow:2px 2px 10px gray;
         -webkit-box-shadow:2px 2px 10px gray;
         border-radius: 2px;
+    }
+
+    
 }
+
+@media screen and (max-width: 1200px) {
+    #desktop_menu{
+        display: none;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    #burger_btn{
+        display: none;
+    }
