@@ -28,8 +28,20 @@ form{
 
 label{
     margin: .5rem;
+    padding-top: .2rem
 }
 
+.form_input{
+    border-top: none;
+    border-right: none;
+    outline: none;
+    height: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+#user_message{
+    height: 5rem;
+}
 
 #submit_btn{
     width: 5rem;
