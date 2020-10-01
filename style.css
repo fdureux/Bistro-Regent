@@ -37,7 +37,12 @@ header{
     height: 3rem;
 }
 
-ul{
+#responsive_menu{
+    display: flex; 
+    flex-direction: column;
+}
+
+#desktop_menu{
     display: flex;
 }
 
@@ -86,5 +91,9 @@ ul{
 
 @media screen and (min-width: 1200px) {
     #burger_btn{
+        display: none;
+    }
+
+    #responsive_menu{
         display: none;
     }
