@@ -279,15 +279,11 @@ footer .follow nav {
         }
      
         .container-softs {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            align-content: space-between;
+            display: inline-flex;  
         }    
-
-    }
+    /* Mettre les enfants en display inline ; ajouter height (et width). Meme chose pour la carte des boissons
+    Softs: faire des br et supp drink infos. Carte des vins: mettre contenance sous le nom. Rebouger les borders pour meilleur rendu. */
+    
     
     @media screen and (max-width: 698px) {
         #optional{
