@@ -93,12 +93,11 @@ header{
 /*RESPONSIVE MENU*/
 #responsive_menu{
     position : fixed;
+    margin-top: 82px;
     display: none;
     flex-direction: column;
     background-color: #333;
     width: 9.5rem;
-    height: 100%;
-    /* opacity: 0.5; */
     border-bottom-right-radius: 15px;    
 }
 
@@ -361,10 +360,24 @@ footer .follow nav {
      
         .container-softs {
             display: inline-flex;  
-        }    
+        } 
+
+
+        #burger_btn_down,
+        #burger_btn_up,
+        #responsive_menu
+        {
+            display: none;
+        }
+    }    
     /* Mettre les enfants en display inline ; ajouter height (et width). Meme chose pour la carte des boissons
     Softs: faire des br et supp drink infos. Carte des vins: mettre contenance sous le nom. Rebouger les borders pour meilleur rendu. */
     
+    @media screen and (max-width: 1200px) {
+        #desktop_menu{
+            display: none;
+        }
+    }
     
     @media screen and (max-width: 698px) {
         #optional{
@@ -375,3 +388,4 @@ footer .follow nav {
             width: 95%;
         }
     }
+}
