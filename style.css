@@ -63,6 +63,9 @@ footer .nomfooter p{
     margin-top: 5px;
     font-size: 12px;
 }
+footer .nomfooter a{
+    color: var(--color);
+}
 footer .follow nav {
     display: flex;
     justify-content: space-between;
