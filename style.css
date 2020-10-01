@@ -18,59 +18,36 @@ body {
 .wrapper {
     background-color: var(--light);
 }
-
-/*FORMULAIRE*/
-h2{
+/*Menu Plat*/
+#plat h1{
     text-align: center;
-    color: var(--dark);
+    font-size: 60px;
 }
-
-form{
-    display: grid;
-    grid-template-columns: 20rem;
-    justify-content: center;
+#plat h2{
+    margin: 0px 0px 0px 40px;  
+    font-size: 30px;
+    color: var(--light);
 }
-
-label{
-    margin: .5rem;
-    padding-top: .2rem;
+#plat p {
+    font-size: 25px;
+    color: var(--light);
 }
-
-.form_input{
-    border: none;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
-    border-color: var(--dark);
-    border-bottom-left-radius: 5px;
-    outline: none;
-    height: 1.2rem;
-    padding-left: 0.5rem;
+#plat img{
+    float: left;
+    margin: 4px 0px 0px 5px;
+    im
 }
-
-#select_input{
-    background-color: var(--light);
-}
-
-#user_message{
-    height: 5rem;
-}
-
-#submit_btn{
-    width: 5rem;
-    height: 2.5rem;
-    margin: 1rem;
-    justify-self: end;
-    border-radius: 13px;
-    border: 2px solid var(--color);
+#plat .formule{
+    border: solid 1px black;
     background-color: var(--dark);
-    color: var(--color);
+    text-align: center;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    padding-top: 40px;
+    border-radius: 4px;
+    box-shadow:0px 5px 10px var(--dark);
 }
-
-#submit_btn:hover{
-    cursor: pointer;
-    box-shadow: var(--dark) 0px 5px 15px;
-}
-
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 70rem;
@@ -81,4 +58,3 @@ label{
         border-radius: 2px;
 }
     }
-}
