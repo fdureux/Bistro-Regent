@@ -14,18 +14,54 @@
 <body>
     <div class='wrapper'>
         <header>
+            <div id="burger_container">
+                <img src="img/burger.png" alt="burger" class="burger_btn" id="burger_btn_down">
+                <img src="img/burger2.png" alt="burger" class="burger_btn" id="burger_btn_up">
+            </div>
             <nav>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Nos plats</li>
-                    <li>Nos desserts</li>
-                    <li>Nos boissons</li>
+                <ul id="desktop_menu">
+                    <a href="#home" class="nav_btn">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#plat" class="nav_btn">
+                        <li>Nos plats</li>
+                    </a>
+                    <a href="#dessert" class="nav_btn">
+                        <li>Nos desserts</li>
+                    </a>
+                    <a href="#boisson" class="nav_btn">
+                        <li>Nos boissons</li>
+                    </a>
                     <!--<li>Champagne</li>-->
                     <!--<li>Galerie</li>-->
-                    <li>Nous contacter</li>
+                    <a href="#contact" class="nav_btn">
+                        <li>Nous contacter</li>
+                    </a>
                 </ul>
             </nav>
+            <img src="img/logo-bistrot.png" alt="Bistort Régent" id="logo_bistrot">
         </header>
+        <nav id="responsive_menu">
+            <ul>
+                <a href="#home" class="nav_btn">
+                    <li>Accueil</li>
+                </a>
+                <a href="#dishes" class="nav_btn">
+                    <li>Nos plats</li>
+                </a>
+                <a href="#desserts" class="nav_btn">
+                    <li>Nos desserts</li>
+                </a>
+                <a href="#drinks" class="nav_btn">
+                    <li>Nos boissons</li>
+                </a>
+                <!--<li>Champagne</li>-->
+                <!--<li>Galerie</li>-->
+                <a href="#contact" class="nav_btn">
+                    <li>Nous contacter</li>
+                </a>
+            </ul>
+        </nav>
         <main>
             <section class="card" id="phiphi">
                 <h1> Bienvenue au Bistro Régent !</h1>
