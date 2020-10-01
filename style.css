@@ -165,6 +165,58 @@ label{
 #user_message{
     height: 5rem;
 }
+/* Footer */
+footer {
+    border : solid black 1px;
+    height: 243px;
+    background-color:var(--dark);  
+    list-style: none;  
+}
+footer a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.footer1 h3{
+    color: var(--color);
+}
+footer .footer1{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-right: 100px;
+}
+
+footer .listeregent{
+    width: 15rem;
+    flex-direction: column;
+    margin-right: -66px;
+
+}
+footer li {
+    font-size: 12px;
+}
+footer hr{
+    margin-top: 40px;
+    color: var(--light);
+}
+footer .nomfooter{
+    display: flex;
+    justify-content: space-around;
+}
+footer .nomfooter p{
+    color: var(--light);
+    margin-top: 5px;
+    font-size: 12px;
+}
+footer .nomfooter a{
+    color: var(--color);
+}
+footer .follow nav {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
 
 #submit_btn{
     width: 5rem;
@@ -267,3 +319,4 @@ label{
             width: 95%;
         }
     }
+
