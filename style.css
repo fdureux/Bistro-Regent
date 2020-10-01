@@ -19,7 +19,10 @@ body {
     background-color: var(--light);
 }
 
+/*DESKTOP MENU*/
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     max-width: 100%;
     background-color: var(--dark);
@@ -29,51 +32,77 @@ header{
 }
 
 #burger_container{
-    height: 48px;
-    width: 48px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 22.75px;
 }
 
-#burger_btn{
-    height: 3rem;
+.burger_btn{
+    position: absolute;
+    height: 1rem;
+    cursor: pointer;
 }
- 
-#responsive_menu{
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+
+#burger_btn_down{
+    z-index: 2;
+}
+
+#burger_btn_up{
+ z-index : 1;
 }
 
 #desktop_menu{
     display: flex;
 }
 
+/*BUTTON MENU */
 .nav_btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 .5rem;
+    margin: .5rem;
     list-style: none;
     height: 2rem;
     width: 8rem;
     text-align: center;
-    border: 1px solid var(--light);
+    opacity: 1;
+    border: 1px solid var(--color);
     border-radius: 10px;
-    color: var(--color);
+    color: var(--light);
     text-decoration: none;
     background-color: var(--dark);
 }
 
 #logo_bistrot{
-    height: 3rem;
+    height: 2rem;
     padding: 1rem;
-    margin:  .5rem 2rem;
+    margin:  0 1rem;
     border: 1px solid var(--color);
-    border-radius: 50%;
+    border-radius: 100%;
+}
+
+/*RESPONSIVE MENU*/
+#responsive_menu{
+    position : fixed;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 9.5rem;
+    height: 100%;
+    /* opacity: 0.5; */
+    border-bottom-right-radius: 15px;    
+}
+
+#responsive_menu > ul{
+    margin: 0;
+    padding: 0;
 }
 
 /*FORMULAIRE*/
-h2{
+#contact > h2{
     text-align: center;
     color: var(--dark);
 }
@@ -134,20 +163,16 @@ label{
         border-radius: 2px;
     }
 
-    
+    #burger_btn_down,
+    #burger_btn_up,
+    #responsive_menu
+    {
+        display: none;
+    }    
 }
 
 @media screen and (max-width: 1200px) {
     #desktop_menu{
         display: none;
-    }
+    }    
 }
-
-@media screen and (min-width: 1200px) {
-    #burger_btn{
-        display: none;
-    }
-
-    #responsive_menu{
-        display: none;
-    }
