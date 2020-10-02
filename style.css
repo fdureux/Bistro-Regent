@@ -358,6 +358,14 @@ footer .follow nav {
             border-radius: 2px;
         }
      
+        .large-display{
+            display: inline-flex;
+        }
+
+        .aperooo{
+            margin-right: 10rem;
+        }
+
         .container-softs {
             display: inline-flex;  
         } 
