@@ -34,15 +34,14 @@ body {
     color: var(--light);
 }
 #plat img{
-    float: left;
-    margin: 4px 0px 0px 5px;
+    margin: 0px 0px 0px 45px;
 }
 #plat .formule{
     border: solid 1px black;
     background-color: var(--dark);
     text-align: center;
     width: 90%;
-    height: 450px;
+    height: 600px;
     margin: auto;
     padding-top: 40px;
     border-radius: 4px;
@@ -70,6 +69,40 @@ body {
     margin: auto;
     border-radius: 4px;
     box-shadow: 0px 5px 10px var(--dark);
+}
+#dessert .desserts {
+    border: solid 1px black;
+    background-color: var(--dark);
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px var(--dark);
+}
+#dessert h1{
+    text-align: center;
+    font-size: 40px;
+}
+#dessert li {
+    color: var(--light);
+    font-size: 20px;
+    list-style: none;
+}
+#dessert .liste{
+    display: flex;
+}
+#dessert ul{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+#dessert p{
+    color: var(--light);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
 }
 @media screen and (min-width: 1200px) {
     .wrapper {
