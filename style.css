@@ -21,7 +21,6 @@ body {
 
 /* Footer */
 footer {
-    border : solid black 1px;
     height: 243px;
     background-color:var(--dark);  
     list-style: none;  
@@ -79,5 +78,17 @@ footer .follow nav {
         -moz-box-shadow:2px 2px 10px gray;
         -webkit-box-shadow:2px 2px 10px gray;
         border-radius: 2px;
-}
     }
+}
+
+@media screen and (max-width: 768px) {
+     .footer1{
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+    }
+
+    footer .logo_bistrot{
+        display:  none;
+    }
+}
