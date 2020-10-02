@@ -84,11 +84,26 @@ footer .follow nav {
 @media screen and (max-width: 768px) {
      .footer1{
          display: flex;
-         justify-content: space-between;
+         justify-content: space-around;
          width: 100%;
+         padding-top: 10px;
+         padding-left: 10px;
     }
 
     footer .logo_bistrot{
         display:  none;
+    }
+    .footer1 h3{
+        display: none;
+    }
+    .follow{
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .follow nav{
+        display: flex;
+        flex-direction: column;
     }
 }
