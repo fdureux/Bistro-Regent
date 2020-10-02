@@ -109,34 +109,25 @@ header{
     /* PHIPHI BANNIERE */
     
 #phiphi {
-    background-color: var(--dark);
-    color: var(--light);
-    flex-direction: flex-align;
-    margin: 0.1rem;
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0.5rem 0.5rem 1rem 3rem;
     border-radius: 3px;
     }
-    
-#phiphi h1 {
+
+.banner{
+    display:inline-flex;
+}
+
+.text{
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+}
+
+.text h1{
     text-align: center;
 }
-    
-#phiphi .banner {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 2rem;
-    }
-    
-#phiphi .text {
-    text-align: justify;
-    width: 50%;
-    float: right;
-    font-size: 0.9rem;
-    }
-    
-#phiphi img {
-    max-width: 50%;
-    height: auto;
-    }
     
     /* CARTE DES BOISSONS */
     
@@ -398,4 +389,3 @@ footer .follow nav {
             width: 95%;
         }
     }
-}
