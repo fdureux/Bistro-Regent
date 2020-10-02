@@ -111,8 +111,9 @@ header{
 #phiphi {
     background-color: var(--dark);
     color: var(--light);
-    display: flex;
-    flex-direction: column;
+    flex-direction: flex-align;
+    margin: 0.1rem;
+    border-radius: 3px;
     }
     
 #phiphi h1 {
@@ -120,6 +121,7 @@ header{
 }
     
 #phiphi .banner {
+    display: flex;
     justify-content: space-between;
     padding-right: 2rem;
     }
