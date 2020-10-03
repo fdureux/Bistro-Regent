@@ -64,11 +64,9 @@ header{
     align-items: center;
     justify-content: center;
     margin: .5rem;
-    list-style: none;
     height: 2rem;
     width: 8rem;
     text-align: center;
-    opacity: 1;
     border: 1px solid var(--color);
     border-radius: 10px;
     color: var(--light);
@@ -86,19 +84,16 @@ header{
 
 /*RESPONSIVE MENU*/
 #responsive_menu{
-    position : fixed;
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    width: 9.5rem;
-    height: 100%;
-    /* opacity: 0.5; */
-    border-bottom-right-radius: 15px;    
-}
-
-#responsive_menu > ul{
     margin: 0;
     padding: 0;
+    position : fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #333;
+    width: 9.5rem;
+    height: 100px;
+    border-bottom-right-radius: 15px;    
+    transition: .5s;
 }
 
 /*FORMULAIRE*/
@@ -164,15 +159,18 @@ label{
     }
 
     #burger_btn_down,
-    #burger_btn_up,
-    #responsive_menu
+    #burger_btn_up
     {
         display: none;
-    }    
+    }
+    #responsive_menu{
+        height: 0;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
     #desktop_menu{
         display: none;
-    }    
+    }  
 }
