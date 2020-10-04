@@ -104,6 +104,33 @@ body {
     text-align: center;
     padding-top: 20px;
 }
+#plat #rumsteak:hover{
+    cursor: pointer;
+}
+#plat #rumsteak .tooltip{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    height: 333px;
+    bottom: 0;
+    left: -60px;
+    top: 77px;
+    transform: translateX(218%);
+    opacity: 0;
+    transition: 500ms;
+}
+#plat #rumsteak .tooltip img{
+    border-radius: 4px;
+    margin: 25px 0px 0px 50px;
+}
+#plat #rumsteak:hover .tooltip{
+   opacity: 1;
+}
+
+
+
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 70rem;
