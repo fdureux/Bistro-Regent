@@ -1,32 +1,33 @@
-:root { 
+:root {
     /* color variables */
-        --light : #ffffed;
-        --dark : #333;
-        --color : #bac94c;
-    }
-    
-    
+    --light: #ffffed;
+    --dark: #333;
+    --color: #bac94c;
+}
+
+
 /* GENERAL  */
-html, body {
-    margin:0;
-    padding:0;
-    
-    }
-    
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
     background-color: lightgrey;
     color: var(--dark);
-    font-family: 'Montserrat', sans-serif;
-    }
-    
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .wrapper {
     background-color: var(--light);
     display: flex;
     flex-direction: column;
-    }   
-    
+}
+
 /*DESKTOP MENU*/
-.header{
+.header {
     z-index: 1;
     position: sticky;
     top: 0;
@@ -37,7 +38,7 @@ body {
     align-items: center;
 }
 
-#burger_container{
+#burger_container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,26 +47,26 @@ body {
     width: 22.75px;
 }
 
-.burger_btn{
+.burger_btn {
     position: absolute;
     height: 1rem;
     cursor: pointer;
 }
 
-#burger_btn_down{
+#burger_btn_down {
     z-index: 2;
 }
 
-#burger_btn_up{
- z-index : 1;
+#burger_btn_up {
+    z-index: 1;
 }
 
-#desktop_menu{
+#desktop_menu {
     display: flex;
 }
 
 /*BUTTON MENU */
-.nav_btn{
+.nav_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,97 +84,100 @@ body {
     background-color: var(--dark);
 }
 
-.logo_bistrot{
+.logo_bistrot {
     height: 2rem;
-    margin:  0 1rem;
+    margin: 0 1rem;
     border: 1px solid var(--color);
     border-radius: 100%;
 }
 
 /*RESPONSIVE MENU*/
-#responsive_menu{
-    position : fixed;
+#responsive_menu {
+    position: fixed;
     margin-top: 82px;
     display: none;
     flex-direction: column;
     background-color: #333;
     width: 9.5rem;
-    border-bottom-right-radius: 15px;    
+    border-bottom-right-radius: 15px;
 }
 
-#responsive_menu > ul{
+#responsive_menu>ul {
     margin: 0;
     padding: 0;
 }
- 
 
-    /* PHIPHI BANNIERE */
-    
+
+/* PHIPHI BANNIERE */
+
 #phiphi {
     background-color: var(--light);
     color: var(--dark);
     border-radius: 3px;
-    }
+}
 
-.banner{
-    display:block;
+.banner {
+    display: block;
     margin: auto;
     padding-top: .5rem;
     text-align: center;
 }
 
-.banner h3{
+.banner h3 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2rem;
     margin-left: 1rem;
 }
 
-#demo{
+#demo {
     width: 100%;
     margin: 1rem auto;
 }
-.text{
+
+.text {
     width: 88%;
     margin: auto;
     text-align: justify;
 }
 
-.text h1{
+.text h1 {
     text-align: center;
 }
 
-.infos-restau{
+.infos-restau {
     margin-top: 1rem;
+    margin: auto;
+    max-width: 100%;
 }
 
-.infos-restau h4{
+.infos-restau h4 {
     font-size: 1.3rem;
     font-weight: 200;
 }
-  
-    /* CARTE DES BOISSONS */
-    
+
+/* CARTE DES BOISSONS */
+
 #drinks h2 {
     padding: 0 2rem;
     text-transform: uppercase;
-    }
-    
-    
-.drink-type{
+}
+
+
+.drink-type {
     margin: 4rem 2rem;
-    box-shadow: 2px 5px lightgrey; 
+    box-shadow: 2px 5px lightgrey;
     -moz-box-shadow: 1px 2px 5px lightgrey;
     -webkit-box-shadow: 1px 2px 5px lightgrey;
     border-radius: 2px;
     padding: 2rem 0;
-    }
-    
-.border{
+}
+
+.border {
     height: 1px;
     width: 85%;
     margin: 0 auto;
     border-top: 1px solid var(--color);
-    }
+}
 
 .drinks-menu {
     display: grid;
@@ -191,14 +195,15 @@ body {
 
 /* Vins */
 
-#legends{
+#legends {
     font-size: 0.7rem;
     padding: 0;
     margin: 0;
 }
- .wine {
+
+.wine {
     display: grid;
-    grid-template-columns: 4.5fr 0.5fr 0.5fr 1.3fr 1fr  1fr 0.9fr;
+    grid-template-columns: 4.5fr 0.5fr 0.5fr 1.3fr 1fr 1fr 0.9fr;
     padding: 0.5rem;
     margin: 1rem 2rem;
 }
@@ -223,25 +228,30 @@ body {
     border-radius: 50%;
     background-color: #e6d67c;
 }
+
 /*Menu Plat*/
-#plat h1{
+#plat h1 {
     text-align: center;
     font-size: 60px;
 }
-#plat h2{
-    margin: 0px 0px 0px 40px;  
+
+#plat h2 {
+    margin: 0px 0px 0px 40px;
     font-size: 30px;
     color: var(--light);
 }
+
 #plat p {
     font-size: 25px;
     color: var(--light);
 }
-#plat img{
+
+#plat img {
     float: left;
     margin: 4px 0px 0px 5px;
 }
-#plat .formule{
+
+#plat .formule {
     border: solid 1px black;
     background-color: var(--dark);
     text-align: center;
@@ -250,192 +260,205 @@ body {
     margin: auto;
     padding-top: 40px;
     border-radius: 4px;
-    box-shadow:0px 5px 10px var(--dark);
+    box-shadow: 0px 5px 10px var(--dark);
 }
 
-#user_message{
+#user_message {
     height: 5rem;
 }
+
 /* Footer */
 footer {
-    border : solid black 1px;
+    border: solid black 1px;
     height: 243px;
-    background-color:var(--dark);  
-    list-style: none;  
+    background-color: var(--dark);
+    list-style: none;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--light);
 }
 
-.footer1 h3{
+.footer1 h3 {
     color: var(--color);
 }
-footer .footer1{
+
+footer .footer1 {
     display: flex;
     justify-content: space-around;
     text-align: left;
     margin-right: 100px;
 }
 
-footer .listeregent{
+footer .listeregent {
     width: 15rem;
     flex-direction: column;
     margin-right: -66px;
 
 }
+
 footer li {
     font-size: 12px;
 }
-footer hr{
+
+footer hr {
     margin-top: 40px;
     color: var(--light);
 }
-footer .nomfooter{
+
+footer .nomfooter {
     display: flex;
     justify-content: space-around;
 }
-footer .nomfooter p{
+
+footer .nomfooter p {
     color: var(--light);
     margin-top: 5px;
     font-size: 12px;
 }
-footer .nomfooter a{
+
+footer .nomfooter a {
     color: var(--color);
 }
+
 footer .follow nav {
     display: flex;
     justify-content: space-between;
     width: 120px;
 }
-        /*FORMULAIRE*/
-    #contact h2{
-        text-align: center;
-        color: var(--dark);
+
+/*FORMULAIRE*/
+#contact h2 {
+    text-align: center;
+    color: var(--dark);
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 20rem;
+    justify-content: center;
+}
+
+label {
+    margin: .5rem;
+    padding-top: .2rem;
+}
+
+.form_input {
+    border: none;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--dark);
+    border-bottom-left-radius: 5px;
+    outline: none;
+    height: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+#select_input {
+    background-color: var(--light);
+}
+
+#user_message {
+    height: 5rem;
+}
+
+#submit_btn {
+    width: 5rem;
+    height: 2.5rem;
+    margin: 1rem;
+    justify-self: end;
+    border-radius: 13px;
+    border: 2px solid var(--color);
+    background-color: var(--dark);
+    color: var(--color);
+}
+
+#submit_btn:hover {
+    cursor: pointer;
+    box-shadow: var(--dark) 0px 5px 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        width: 70%;
+        margin: auto;
+        box-shadow: 2px 2px 10px gray;
+        -moz-box-shadow: 2px 2px 10px gray;
+        -webkit-box-shadow: 2px 2px 10px gray;
+        border-radius: 2px;
     }
-    
-    
-    form{
-        display: grid;
-        grid-template-columns: 20rem;
-        justify-content: center;
+
+    #phiphi {
+        margin: 0.5rem 3rem;
     }
-    
-    label{
-        margin: .5rem;
-        padding-top: .2rem;
+
+    .banner h3 {
+        display: inline;
     }
-    
-    .form_input{
-        border: none;
-        border-left: 1px solid;
-        border-bottom: 1px solid;
-        border-color: var(--dark);
-        border-bottom-left-radius: 5px;
-        outline: none;
-        height: 1.2rem;
-        padding-left: 0.5rem;
+
+    .banner img {
+        display: inline;
     }
-    
-    #select_input{
-        background-color: var(--light);
+
+    #demo {
+        width: 90%;
     }
-    
-    #user_message{
-        height: 5rem;
+
+    .large-display {
+        display: inline-flex;
     }
-    
-    #submit_btn{
-        width: 5rem;
-        height: 2.5rem;
-        margin: 1rem;
-        justify-self: end;
-        border-radius: 13px;
-        border: 2px solid var(--color);
-        background-color: var(--dark);
-        color: var(--color);
+
+    .aperooo {
+        margin-right: 10rem;
     }
-    
-    #submit_btn:hover{
-        cursor: pointer;
-        box-shadow: var(--dark) 0px 5px 15px;
+
+    .container-softs {
+        display: inline-flex;
     }
-    
-    /* MEDIA QUERIES */
-    
-    @media screen and (min-width: 800px) {
-        .wrapper {
-            width: 70%;
-            margin: auto;
-            box-shadow:2px 2px 10px gray; 
-            -moz-box-shadow:2px 2px 10px gray;
-            -webkit-box-shadow:2px 2px 10px gray;
-            border-radius: 2px;
-        }
 
-        #phiphi{
-            margin: 0.5rem 3rem;
-        }
-        .banner h3{
-            display: inline;
-        }
-        
-        .banner img{
-            display:inline;
-        }
+    .infos-restau {
+        display: flex;
+        justify-content: space-around;
+    }
 
-        #demo {
-            width: 90%;
-        }
-     
-        .large-display{
-            display: inline-flex;
-        }
+    .horaries {
+        display: inline;
+    }
 
-        .aperooo{
-            margin-right: 10rem;
-        }
+    .localisation {
+        display: inline;
+    }
 
-        .container-softs {
-            display: inline-flex;  
-        } 
+    .googlemaps {
+        justify-self: center;
+    }
 
-        .infos-restau{
-            display: flex;
-            justify-content: space-around;
-        }
+    #burger_btn_down,
+    #burger_btn_up,
+    #responsive_menu {
+        display: none;
+    }
+}
 
-        .horaries{
-            display: inline;
-        }
-
-        .localisation{
-            display: inline;
-        }
-
-        .googlemaps{
-            justify-self: center;
-        }
-
-        #burger_btn_down,
-        #burger_btn_up,
-        #responsive_menu
-        {
-            display: none;
-        }
-    }    
-    /* Mettre les enfants en display inline ; ajouter height (et width). Meme chose pour la carte des boissons
+/* Mettre les enfants en display inline ; ajouter height (et width). Meme chose pour la carte des boissons
     Softs: faire des br et supp drink infos. Carte des vins: mettre contenance sous le nom. Rebouger les borders pour meilleur rendu. */
-    
-    
-    @media screen and (max-width: 698px) {
-        #optional{
-            display: none;
-        }
-        .bloc-container {
-            width: 95%;
-        }
-        #desktop_menu{
-            display: none;
-        }
+
+
+@media screen and (max-width: 698px) {
+    #optional {
+        display: none;
     }
+
+    .bloc-container {
+        width: 95%;
+    }
+
+    #desktop_menu {
+        display: none;
+    }
+}
