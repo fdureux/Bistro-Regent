@@ -17,7 +17,7 @@ body {
 body {
     background-color: lightgrey;
     color: var(--dark);
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -146,13 +146,17 @@ body {
 
 .infos-restau {
     margin-top: 1rem;
-    margin: auto;
-    max-width: 100%;
+    text-align: center;
 }
 
 .infos-restau h4 {
     font-size: 1.3rem;
     font-weight: 200;
+}
+
+#booking {
+    width: 60%;
+    margin: 1rem auto;
 }
 
 /* CARTE DES BOISSONS */
@@ -172,7 +176,7 @@ body {
     padding: 2rem 0;
 }
 
-.border {
+.separator {
     height: 1px;
     width: 85%;
     margin: 0 auto;
@@ -181,16 +185,24 @@ body {
 
 .drinks-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     padding: 0.5rem;
     margin: 1rem 2rem;
+}
+
+.drink-space {
+    margin: 0 1rem;
+}
+
+.drink-name {
+    max-width: 80%;
 }
 
 .apero-menu {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     padding: 0.5rem;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
 }
 
 /* Vins */
@@ -206,6 +218,10 @@ body {
     grid-template-columns: 4.5fr 0.5fr 0.5fr 1.3fr 1fr 1fr 0.9fr;
     padding: 0.5rem;
     margin: 1rem 2rem;
+}
+
+.wine div {
+    margin: 0 0.25rem;
 }
 
 .red-round {
@@ -383,7 +399,7 @@ label {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1100px) {
     .wrapper {
         width: 70%;
         margin: auto;
@@ -395,6 +411,10 @@ label {
 
     #phiphi {
         margin: 0.5rem 3rem;
+    }
+
+    .banner {
+        display: flex;
     }
 
     .banner h3 {
@@ -426,6 +446,10 @@ label {
         justify-content: space-around;
     }
 
+    .infos-restau .horaries p {
+        text-align: left;
+    }
+
     .horaries {
         display: inline;
     }
@@ -434,8 +458,18 @@ label {
         display: inline;
     }
 
+
+    #booking {
+        width: 8rem;
+        margin-left: 5%;
+    }
+
     .googlemaps {
         justify-self: center;
+    }
+
+    .apero-menu {
+        margin: 1rem 2rem;
     }
 
     #burger_btn_down,
@@ -460,5 +494,18 @@ label {
 
     #desktop_menu {
         display: none;
+    }
+
+    .wine {
+        margin: 1rem 1rem;
+    }
+
+    .drinks h3,h4, div > * {
+        font-size: 10px;
+    }
+
+    .round {
+        width: 1rem;
+        height: 1rem;
     }
 }
