@@ -10,13 +10,13 @@
 html, body {
     margin:0;
     padding:0;
-    font-family: Calibri , sans-serif;
+    font-family: 'Montserrat' , sans-serif;
     }
     
 body {
     background-color: lightgrey;
     color: var(--dark);
-    font-family: 'calibri', sans-serif;
+
     }
     
 .wrapper {
@@ -105,7 +105,8 @@ header{
     margin: 0;
     padding: 0;
 }
-    
+ 
+
     /* PHIPHI BANNIERE */
     
 #phiphi {
@@ -119,6 +120,12 @@ header{
     display:inline-flex;
 }
 
+.banner h3{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
 .text{
     width: 75%;
     margin: auto;
@@ -127,6 +134,11 @@ header{
 
 .text h1{
     text-align: center;
+}
+
+.iframe{
+    width: 90rem;
+    height: 40rem;
 }
     
     /* CARTE DES BOISSONS */
