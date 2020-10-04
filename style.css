@@ -10,13 +10,13 @@
 html, body {
     margin:0;
     padding:0;
-    font-family: 'Montserrat' , sans-serif;
+    
     }
     
 body {
     background-color: lightgrey;
     color: var(--dark);
-
+    font-family: 'Montserrat', sans-serif;
     }
     
 .wrapper {
@@ -26,11 +26,11 @@ body {
     }   
     
 /*DESKTOP MENU*/
-header{
+.header{
+    z-index: 1;
     position: sticky;
     top: 0;
     display: flex;
-    max-width: 100%;
     background-color: var(--dark);
     padding: .5rem;
     justify-content: space-between;
@@ -69,6 +69,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: auto;
     margin: .5rem;
     list-style: none;
     height: 2rem;
@@ -84,7 +85,6 @@ header{
 
 .logo_bistrot{
     height: 2rem;
-    padding: 1rem;
     margin:  0 1rem;
     border: 1px solid var(--color);
     border-radius: 100%;
@@ -112,12 +112,14 @@ header{
 #phiphi {
     background-color: var(--light);
     color: var(--dark);
-    margin: 0.5rem 0.5rem 1rem 3rem;
     border-radius: 3px;
     }
 
 .banner{
-    display:inline-flex;
+    display:block;
+    margin: auto;
+    padding-top: .5rem;
+    text-align: center;
 }
 
 .banner h3{
@@ -126,8 +128,12 @@ header{
     margin-left: 1rem;
 }
 
+#demo{
+    width: 100%;
+    margin: 1rem auto;
+}
 .text{
-    width: 75%;
+    width: 88%;
     margin: auto;
     text-align: justify;
 }
@@ -136,11 +142,15 @@ header{
     text-align: center;
 }
 
-.iframe{
-    width: 90rem;
-    height: 40rem;
+.infos-restau{
+    margin-top: 1rem;
 }
-    
+
+.infos-restau h4{
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+  
     /* CARTE DES BOISSONS */
     
 #drinks h2 {
@@ -353,7 +363,7 @@ footer .follow nav {
     
     /* MEDIA QUERIES */
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 800px) {
         .wrapper {
             width: 70%;
             margin: auto;
@@ -361,6 +371,21 @@ footer .follow nav {
             -moz-box-shadow:2px 2px 10px gray;
             -webkit-box-shadow:2px 2px 10px gray;
             border-radius: 2px;
+        }
+
+        #phiphi{
+            margin: 0.5rem 3rem;
+        }
+        .banner h3{
+            display: inline;
+        }
+        
+        .banner img{
+            display:inline;
+        }
+
+        #demo {
+            width: 90%;
         }
      
         .large-display{
@@ -375,6 +400,22 @@ footer .follow nav {
             display: inline-flex;  
         } 
 
+        .infos-restau{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .horaries{
+            display: inline;
+        }
+
+        .localisation{
+            display: inline;
+        }
+
+        .googlemaps{
+            justify-self: center;
+        }
 
         #burger_btn_down,
         #burger_btn_up,
@@ -386,18 +427,15 @@ footer .follow nav {
     /* Mettre les enfants en display inline ; ajouter height (et width). Meme chose pour la carte des boissons
     Softs: faire des br et supp drink infos. Carte des vins: mettre contenance sous le nom. Rebouger les borders pour meilleur rendu. */
     
-    @media screen and (max-width: 1200px) {
-        #desktop_menu{
-            display: none;
-        }
-    }
     
     @media screen and (max-width: 698px) {
         #optional{
             display: none;
         }
-    
         .bloc-container {
             width: 95%;
+        }
+        #desktop_menu{
+            display: none;
         }
     }
