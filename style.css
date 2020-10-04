@@ -43,12 +43,33 @@ label{
     border-color: var(--dark);
     border-bottom-left-radius: 5px;
     outline: none;
-    height: 1.2rem;
+    height: 1.5rem;
     padding-left: 0.5rem;
+    background-color: var(--light);
+}
+
+.form_input:focus{
+    transform: scale(1.1);
 }
 
 #select_input{
     background-color: var(--light);
+}
+
+#date_time_box{
+    display: none;
+    justify-content: center;
+}
+
+#date, #time{
+    height: 2rem;
+    border-right: 1px solid var(--dark);
+    border-bottom-right-radius: 5px;
+
+}
+
+#choose_motif{
+    display: none;
 }
 
 #user_message{
@@ -60,10 +81,10 @@ label{
     height: 2.5rem;
     margin: 1rem;
     justify-self: end;
-    border-radius: 13px;
+    border-radius: 20px;
     border: 2px solid var(--color);
-    background-color: var(--dark);
-    color: var(--color);
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 #submit_btn:hover{
