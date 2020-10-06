@@ -72,7 +72,7 @@ label{
     height: 2rem;
     border-right: 1px solid var(--dark);
     border-bottom-right-radius: 5px;
-
+    font-size: .8rem;
 }
 
 #choose_motif{
@@ -97,7 +97,7 @@ label{
 
 #submit_btn:hover{
     cursor: pointer;
-    box-shadow: var(--dark) 0px 5px 15px;
+    box-shadow: var(--dark) 0px 3px 8px;
 }
 
 @media screen and (min-width: 1200px) {
