@@ -273,7 +273,7 @@ header {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ PLATS ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-#dishes h1 {
+#dishes h1{
     text-align: center;
     font-size: 60px;
 }
@@ -282,24 +282,77 @@ header {
     margin: 0px 0px 0px 40px;
     font-size: 30px;
     color: var(--light);
+    text-align: center;
 }
 
 #dishes p {
     font-size: 25px;
     color: var(--light);
+    height: 25px;
 }
 
-#dishes img {
-    float: left;
-    margin: 4px 0px 0px 5px;
+#dishes .partage {
+    border: solid 1px black;
+    background-color: var(--dark);
+    text-align: center;
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px var(--dark);
 }
+#dishes .kid{
+    border: solid 1px black;
+    background-color: var(--dark);
+    text-align: center;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px var(--dark);
+}
+#desserts .desserts {
+    border: solid 1px black;
+    background-color: var(--dark);
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px var(--dark);
+}
+#desserts h1{
+    text-align: center;
+    font-size: 40px;
+}
+#desserts li {
+    color: var(--light);
+    font-size: 20px;
+    list-style: none;
+}
+#desserts .liste{
+    display: flex;
+}
+#desserts ul{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+#dessert p{
+    color: var(--light);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 
 #dishes .formule {
     border: solid 1px black;
     background-color: var(--dark);
     text-align: center;
     width: 90%;
-    height: 450px;
+    height: 600px;
     margin: auto;
     padding-top: 40px;
     border-radius: 4px;
@@ -320,6 +373,7 @@ footer {
     background-color: var(--dark);
     list-style: none;
 }
+
 
 footer a {
     text-decoration: none;
@@ -535,9 +589,15 @@ label {
         display: none;
     }
 }
+    .googlemaps{
+        box-shadow: 3px 3px 10px gray;
+        -moz-box-shadow: 3px 3px 10px gray;
+        -webkit-box-shadow:3px 3px 10px gray;
+        border-radius: 10px;
+    }
+    
 
-
-@media screen and (max-width: 698px) {
+@media screen and (max-width: 768px) {
     #optional {
         display: none;
     }
@@ -561,3 +621,4 @@ label {
         height: 1rem;
     }
 }
+
