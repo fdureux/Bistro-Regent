@@ -404,6 +404,7 @@
                     <input type="email" name="email" class="form_input" id="user_email" required>
                     <label for="motif">Motif :</label>
                     <select class="form_input" name="motif" id="select_input" required>
+<<<<<<< HEAD
                         <option value="reservation">Réservation</option>
                         <option value="avis">Avis</option>
                         <option value="reclamation">Réclamation</option>
@@ -414,6 +415,36 @@
                         placeholder="Tapez votre message ici ..." required>
                     </textarea>
                     <input type="submit" class="form_input" id="submit_btn">
+=======
+                        <option value="" id="default_option">-- Choississez le motif de votre message --</option>
+                        <option value="reservation" id="reservation">Réservation</option>
+                        <option value="avis" id="avis">Avis</option>
+                        <option value="reclamation" id="reclamation">Réclamation</option>
+                        <option value="other" id="other">Autre...</option>
+                    </select>
+                    <div id="date_time_box">
+                        <input type="date" class="form_input" id="date">
+                        <input type="time" value="11:45" class="form_input" id="time" min="11:45" max="14:30">
+                        <label for="nb_personnes">Nb personnes</label>
+                        <select class="form_input" id="nb_personnes">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <input type="text" class="form_input" id="choose_motif" placeholder="Indiquez le motif de votre message :">
+                    <label for="message">Votre message :</label>
+                    <textarea class="form_input" name="message" id="user_message" placeholder="Tapez votre message ici ...">
+                    </textarea>                    
+                    <input type="submit" id="submit_btn">
+>>>>>>> form
                 </form>
             </section>
             <footer>
