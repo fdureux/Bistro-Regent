@@ -22,34 +22,52 @@
         <header class="header">
             <div id="burger_container">
                 <img src="img/burger.png" alt="burger" class="burger_btn" id="burger_btn_down">
-                <img src="img/burger2.png" alt="burger" class="burger_btn" id="burger_btn_up">
+                <img src="img/burger.png" alt="burger" class="burger_btn" id="burger_btn_up">
             </div>
-            <nav>
-                <ul id="desktop_menu">
-                    <a href="#phiphi" class="nav_btn">
-                        <li>Accueil</li>
-                    </a>
-                    <a href="#plat" class="nav_btn">
-                        <li>Nos plats</li>
-                    </a>
-                    <a href="#dessert" class="nav_btn">
-                        <li>Nos desserts</li>
-                    </a>
-                    <a href="#drinks" class="nav_btn">
-                        <li>Nos boissons</li>
-                    </a>
-                    <!--<li>Champagne</li>-->
-                    <!--<li>Galerie</li>-->
-                    <a href="#contact" class="nav_btn">
-                        <li>Nous contacter</li>
-                    </a>
-                </ul>
+            <nav id="desktop_menu">
+                <a href="#home" class="nav_btn">
+                    <span>Accueil</span>
+                </a>
+                <a href="#dishes" class="nav_btn">
+                    <span>Nos plats</span>
+                </a>
+                <a href="#desserts" class="nav_btn">
+                    <span>Nos desserts</span>
+                </a>
+                <a href="#drinks" class="nav_btn">
+                    <span>Nos boissons</span>
+                </a>
+                <!--<span>Champagne</span>-->
+                <!--<span>Galerie</span>-->
+                <a href="#contact" class="nav_btn">
+                    <span>Nous contacter</span>
+                </a>
             </nav>
-            <img src="img/logo-bistrot.png" alt="Bistort Régent" class="logo_bistrot">
+            <img src="img/logo-bistrot.png" alt="Bistro Régent" class="logo_bistrot">
         </header>
+        <nav id="responsive_menu">
+            <a href="#home" class="nav_btn">
+                <span>Accueil</span>
+            </a>
+            <a href="#dishes" class="nav_btn">
+                <span>Nos plats</span>
+            </a>
+            <a href="#desserts" class="nav_btn">
+                <span>Nos desserts</span>
+            </a>
+            <a href="#drinks" class="nav_btn">
+                <span>Nos boissons</span>
+            </a>
+            <!--<li>Champagne</li>-->
+            <!--<li>Galerie</li>-->
+            <a href="#contact" class="nav_btn">
+                <span>Nous contacter</span>
+            </a>
+        </nav>
+       
         <!-- BANNIERE -->
         <main>
-            <section id="phiphi">
+            <section id="home">
                 <div class="banner">
                     <img src=./img/manuscrite.png alt='Bien manger tout simplement, citation de Philippe Etchebest' />
                     <h3>Recommandé par Philippe Etchebest</h3>
@@ -104,14 +122,14 @@
                 <div class="infos-restau">
                     <div class="horaries">
                         <h4>05 57 61 53 30</h4>
-                        <di class=
-                        <h5>Nous vous accueillons tous les jours </h5>   
-                        <p>  Tous les midis de 11h45 à 14h30<br>
-                            Tous les soirs à partir de 18h45 et jusqu'à : <br>
-                            - 22h45 du dimanchnpe au mercredi<br>
-                            - 23h le jeudi<br>
-                            - 23h15 le vendredi et le samedi
-                        </p>
+                        <div class="dates">
+                            <h6>Nous vous accueillons tous les jours </h6>   
+                            <p>  Le midi de 11h45 à 14h30<br>
+                                Le soir de 18h45 et jusqu'à : <br>
+                                - 22h45 du dimanchnpe au mercredi<br>
+                                - 23h le jeudi<br>
+                                - 23h15 le vendredi et le samedi
+                            </p></div>
                     </div>
 
                     <div class="localisation">
@@ -127,8 +145,7 @@
                 <a href="#contact" id="booking" class="nav_btn">Réservez !</a>
             </section>
             <!-- Plat/Dessert-->
-            <section class="card" id="plat">
-
+            <section class="card" id="dishes">
                 <h1>Formule 13€90</h1>
                 <div class="formule">
 
