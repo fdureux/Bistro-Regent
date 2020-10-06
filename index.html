@@ -41,7 +41,7 @@
             </section>
             <section class="card" id="contact">
                 <h2>Nous contacter : </h2>
-                <form>
+                <form id="form">
                     <label for="name"> Votre nom :</label>
                     <input type="text" name="name" class="form_input" id="user_name" required>                    
                     <label for="email"> Votre e-mail :</label>
@@ -56,8 +56,7 @@
                     </select>
                     <div id="date_time_box">
                         <input type="date" class="form_input" id="date">
-                        <input type="time" value="11:45" class="form_input" id="time" min="11:45" max="14:30">
-                        <label for="nb_personnes">Nb personnes</label>
+                        <input type="time" value="11:45" class="form_input" id="time" min="11:45" max="14:30">                        
                         <select class="form_input" id="nb_personnes">
                             <option value="">Nb personnes</option>
                             <option value="1">1</option>
@@ -71,11 +70,10 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </select>
-                    </div>
+                    </div>                    
                     <input type="text" class="form_input" id="choose_motif" placeholder="Indiquez le motif de votre message :">
                     <label for="message">Votre message :</label>
-                    <textarea class="form_input" name="message" id="user_message" placeholder="Tapez votre message ici ...">
-                    </textarea>                    
+                    <textarea class="form_input" name="message" id="user_message" placeholder="Tapez votre message ici ..."></textarea>
                     <input type="submit" id="submit_btn">
                 </form>
             </section>

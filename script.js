@@ -1,5 +1,6 @@
 const select = document.getElementById('select_input');
 const dateTime = document.getElementById('date_time_box');
+const nbPers = document.getElementById('nb_personnes');
 const other = document.getElementById('other');
 const chooseMotif = document.getElementById('choose_motif');
 
@@ -15,9 +16,11 @@ select.addEventListener('change', function(){
         chooseMotif.style.display = "none";
     }   
 })
-// select.addEventListener('change', function(){
-    
-// })
-// console.log(select.value);
-// const date = document.getElementById('date');
-// const time = document.getElementById('time');
+
+
+const submit = document.getElementById('submit_btn');
+const form = document.getElementById('form');
+
+form.onsubmit = function (){
+    alert('ok');
+}
