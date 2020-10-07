@@ -4,6 +4,7 @@ const up = document.getElementById('burger_btn_up');
 const responsiveMenu = document.getElementById('responsive_menu');
 const navBtn = document.getElementsByClassName('nav_btn');
 const section = document.getElementsByTagName('section');
+const booking = document.getElementById('booking');
 
 function rollUp(){
     responsiveMenu.style.marginLeft= "-10rem";
@@ -33,7 +34,11 @@ for ( let i=0; i<section.length; i++){
     })
 }
 
+booking.addEventListener('click', function(){
+    select.value ="reservation";
+    dateTime.style.display = "flex";
 
+})
     /* FORM */
     
 const select = document.getElementById('select_input');
