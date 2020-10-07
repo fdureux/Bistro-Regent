@@ -53,12 +53,12 @@ a:hover{
 
   .cardmenu h1{
       color: var(--dark);
-      padding: 2rem;
+      padding: 0 2rem;
   }
 
   .cardmenu {
       margin: 2rem 1rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
   }
 
   .endsection{
@@ -249,6 +249,117 @@ header {
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ PLATS ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+#dishes{
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+#dishes img{
+    filter: invert(1);
+    height: 32px;
+    width: 46px;
+}
+
+.en-tete {
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem 1rem;
+}
+ .en-tete h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+ }
+
+ .othermenu{
+    background: linear-gradient(to right, var(--dark), var(--light), var(--dark));
+    height: 1px;
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+.food h1{
+    color: var(--light);
+}
+.meat{ 
+    display: inline-flex;
+    margin: 1rem;
+}
+
+.meat h2{
+    padding-right: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+#dishes p {
+    font-size: 1.5rem;
+    color: var(--light); 
+}
+
+.food .price-tag{
+    font-size: 1.5rem;
+}
+
+.kid p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#desserts .desserts {
+    margin: 1rem 2rem;
+    box-shadow: 2px 5px lightgrey;
+    -moz-box-shadow: 1px 2px 5px lightgrey;
+    -webkit-box-shadow: 1px 2px 5px lightgrey;
+    border-radius: 4px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 95%;
+}
+
+#desserts .desserts p {
+   display: block;
+   margin: 1rem 2rem;
+}
+
+table{
+    display: inline;
+    text-align: justify;
+    margin: 2rem;
+}
+
+ td{
+     padding: 0.375rem;
+ }
+
+#dishes .food {
+    box-shadow: 2px 5px lightgrey;
+    -moz-box-shadow: 1px 2px 5px lightgrey;
+    -webkit-box-shadow: 1px 2px 5px lightgrey;
+    border-radius: 4px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#user_message {
+    height: 5rem;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ BOISSONS ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -259,7 +370,6 @@ header {
 
 
 .drink-type {
-    margin: 2rem 2rem;
     box-shadow: 2px 5px lightgrey;
     -moz-box-shadow: 1px 2px 5px lightgrey;
     -webkit-box-shadow: 1px 2px 5px lightgrey;
@@ -323,7 +433,7 @@ header {
 }
 
 .wine div {
-    margin: 0 0.25rem;
+    margin: 0 0.125rem;
 }
 
 .red-round {
@@ -348,122 +458,15 @@ header {
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ PLATS ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-#dishes{
-    color: var(--light);
-    display: flex;
-    flex-direction: column;
-}
-
-#dishes img{
-    filter: invert(1);
-    height: 32px;
-    width: 46px;
-}
-
-.en-tete {
-    background-color: var(--light);
-    color: var(--dark);
-    border-radius: 5px;
-    width: fit-content;
-    margin: 0 1rem 1rem 1rem;
-    padding: 1rem 1rem;
-}
- .en-tete h2{
-    font-weight: bolder;
-    text-transform: uppercase;
- }
-
- .othermenu{
-    background: linear-gradient(to right, var(--dark), var(--light), var(--dark));
-    height: 1px;
-    width: 85%;
-    margin: 2rem auto;
-  }
-
-.food h1{
-    color: var(--light);
-}
-.meat{ 
-    display: inline-flex;
-    margin: 1rem;
-}
-
-.meat h2{
-    padding-right: 1.5rem;
-    text-transform: uppercase;
-
-}
-
-
-
-#dishes p {
-    font-size: 1.5rem;
-    color: var(--light);
-   
-}
-
-.food .price-tag{
-    font-size: 1.5rem;
-}
-
-.kid p{
-    width: 80%;
-    margin: 0 auto;
-}
-#desserts .desserts {
-    margin: 2rem 2rem;
-    box-shadow: 2px 5px lightgrey;
-    -moz-box-shadow: 1px 2px 5px lightgrey;
-    -webkit-box-shadow: 1px 2px 5px lightgrey;
-    border-radius: 4px;
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 2rem 0;
-    font-size: 1.2rem;
-    display: inline-flex;
-    width: 95%;
-}
-
-table{
-    display: inline;
-    text-align: justify;
-    margin: 2rem;
-}
- td{
-     margin: 1rem;
- }
-#dishes .food {
-    margin: 2rem 2rem;
-    box-shadow: 2px 5px lightgrey;
-    -moz-box-shadow: 1px 2px 5px lightgrey;
-    -webkit-box-shadow: 1px 2px 5px lightgrey;
-    border-radius: 4px;
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 2rem 0;
-    text-align: center;
-    justify-content: center;
-}
-
-#user_message {
-    height: 5rem;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 footer {
-    border: solid black 1px;
-    display: flex;
     background-color: var(--dark);
     list-style: none;
-}
-
+    width: 100%;
+    height: 100%;
+    }
 
 footer a {
     text-decoration: none;
@@ -478,7 +481,8 @@ footer .footer1 {
     display: flex;
     justify-content: space-around;
     text-align: left;
-    margin-right: 100px;
+    margin-left: 2rem;
+    padding-top: 2rem;
 }
 
 footer .listeregent {
@@ -489,8 +493,15 @@ footer .listeregent {
 }
 
 
-footer li {
+footer li a{
     font-size: 12px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+footer li a:hover{
+    text-decoration: none;
+    color: var(--color);
 }
 
 footer hr {
@@ -664,6 +675,20 @@ label {
         margin-right: 10rem;
     }
 
+    .drink-type,
+    .food {
+        margin: 2rem 2rem;
+    }
+
+
+    #desserts .desserts {
+        margin: 2rem 2rem;
+    }
+
+    #desserts .desserts p {
+        display: inline-block;
+    }
+    
     .container-softs {
         display: inline-flex;
     }
@@ -696,14 +721,6 @@ label {
         margin-top: 1rem;
     }
 
-    /*.googlemaps:hover{
-        transform: scale(1.1);
-    }
-
-    
-    .dates:hover{
-        transform: scale(1.2);
-    }*/
 
 
     #booking:hover{
@@ -759,6 +776,58 @@ label {
     .round {
         width: 1rem;
         height: 1rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    footer .logo_bistrot{
+        display:  none;
+    }
+
+    footer .follow{
+        margin-right: -94px;
+    }
+
+    footer .follow li{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    footer .follow nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    footer .follow a {
+        margin: auto;
+    } 
+
+    footer .listeregent{
+        display: none;
+    }
+    footer .nomfooter p{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    }
+
+    .footer1 .follow {
+        margin: 0;
+    }
+
+    .footer1 div h3,
+    .footer1 div nav li a {
+        font-size: 10px;
+    }
+
+    .footer1 img {
+        margin-bottom: 1rem;
     }
 }
 
