@@ -15,10 +15,12 @@ body {
 }
 
 body {
-    background-color: lightgrey;
+    
     color: var(--dark);
     font-family: 'Montserrat', sans-serif;
-}
+    background: linear-gradient(var(--light), var(--dark));
+    }
+
 
 .wrapper {
     background-color: var(--light);
@@ -26,6 +28,12 @@ body {
     flex-direction: column;
 }
 
+
+.appear{
+    opacity:0;
+    position: relative;
+    top: 100px;
+  }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -220,6 +228,12 @@ header {
 
 .drink-name {
     max-width: 80%;
+}
+
+.titleclass{
+    padding: .5rem 0 .5rem 2rem;
+    font-weight: bolder;
+    color: var(--color);
 }
 
 .apero-menu {
@@ -440,7 +454,7 @@ footer .follow nav {
 
 form {
     display: grid;
-    grid-template-columns: 20rem;
+    grid-template-columns: 25rem;
     justify-content: center;
 }
 
@@ -461,18 +475,40 @@ label {
     background-color: var(--light);
 }
 
-.form_input:focus{
-    transform: scale(1.1);
-}
+/*.form_input:focus{
+    /* transform: scale(1.1); 
+}*/
 
 #select_input {
     background-color: var(--light);
 }
 
+/* #nb_personnes{
+    display: none;
+    width: 10rem;
+    justify-content: center;
+    border-right: 1px solid var(--dark);
+} */
 
-#user_message {
+#date_time_box{
+    display:none;
+    justify-content: center;
+}
 
+#date, #time, #nb_personnes{
+    height: 2rem;
+    border-right: 1px solid var(--dark);
+    border-bottom-right-radius: 5px;
+    font-size: .8rem;
+}
+
+#choose_motif{
+    display:none;
+}
+
+#user_message{
     height: 5rem;
+    resize: none;
 }
 
 #submit_btn {
@@ -488,7 +524,7 @@ label {
 
 #submit_btn:hover {
     cursor: pointer;
-    box-shadow: var(--dark) 0px 5px 15px;
+    box-shadow: var(--dark) 0px 3px 8px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -576,13 +612,18 @@ label {
     }
 
     /*.googlemaps:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
+    
     .dates:hover{
         transform: scale(1.2);
     }*/
 
+
+    #booking:hover{
+        transform: scale(1.2);
+    }
     .apero-menu {
         margin: 1rem 2rem;
     }
@@ -597,7 +638,8 @@ label {
         display: none;
     }
 }
-    .googlemaps{
+
+    iframe{
         box-shadow: 3px 3px 10px gray;
         -moz-box-shadow: 3px 3px 10px gray;
         -webkit-box-shadow:3px 3px 10px gray;
@@ -627,6 +669,13 @@ label {
     .round {
         width: 1rem;
         height: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    form{
+        grid-template-columns: 20rem;
     }
 }
 
