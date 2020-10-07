@@ -41,11 +41,31 @@ body {
     flex-direction: column;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
 .appear{
     opacity:0;
     position: relative;
     top: 100px;
+  }
+
+  .cardmenu h1{
+      color: var(--dark);
+      padding: 2rem;
+  }
+
+  .cardmenu {
+      margin: 2rem 1rem;
+      padding-bottom: 2rem;
+  }
+
+  .endsection{
+    background: linear-gradient(to right, var(--light), var(--color), var(--light));
+    height: 3px;
+    width: 85%;
+    margin: 0 auto;
   }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -239,7 +259,7 @@ header {
 
 
 .drink-type {
-    margin: 4rem 2rem;
+    margin: 2rem 2rem;
     box-shadow: 2px 5px lightgrey;
     -moz-box-shadow: 1px 2px 5px lightgrey;
     -webkit-box-shadow: 1px 2px 5px lightgrey;
@@ -342,7 +362,8 @@ header {
 
 #dishes img{
     filter: invert(1);
-    size: fixed;
+    height: 32px;
+    width: 46px;
 }
 
 .en-tete {
@@ -451,7 +472,7 @@ header {
 
 footer {
     border: solid black 1px;
-    height: 243px;
+    display: flex;
     background-color: var(--dark);
     list-style: none;
 }
@@ -519,7 +540,9 @@ footer .follow nav {
     color: var(--dark);
 }
 
-
+#contact{
+    background-color: var(--light);
+}
 form {
     display: grid;
     grid-template-columns: 25rem;
@@ -721,6 +744,9 @@ label {
         border-radius: 10px;
     }
     
+    .en-tete{
+        margin: auto;
+    }
 
 @media screen and (max-width: 768px) {
     #optional {
