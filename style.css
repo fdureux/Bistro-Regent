@@ -137,6 +137,21 @@ header {
     z-index: 2;
 }
 
+#desktop_menu > a, #responsive_menu > a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+#desktop_menu > a:active, #responsive_menu > a:active{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+#desktop_menu > a:hover, #responsive_menu > a:hover{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ ACCUEIL +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -555,7 +570,7 @@ label {
 }
 
 #submit_btn {
-    width: 5rem;
+    width: 7rem;
     height: 2.5rem;
     margin: 1rem;
     justify-self: end;
@@ -567,7 +582,14 @@ label {
 
 #submit_btn:hover {
     cursor: pointer;
-    box-shadow: var(--dark) 0px 3px 8px;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+#submit_btn:active {
+    cursor: pointer;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
