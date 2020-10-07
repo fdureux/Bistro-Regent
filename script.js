@@ -3,7 +3,7 @@ const down = document.getElementById('burger_btn_down');
 const up = document.getElementById('burger_btn_up');
 const responsiveMenu = document.getElementById('responsive_menu');
 const navBtn = document.getElementsByClassName('nav_btn');
-
+const section = document.getElementsByTagName('section');
 
 function rollUp(){
     responsiveMenu.style.marginLeft= "-10rem";
@@ -26,6 +26,12 @@ for ( let i=0; i<navBtn.length; i++){
     navBtn[i].addEventListener('click', function(){
         rollUp(); 
     })
+
+for ( let i=0; i<section.length; i++){
+    section[i].addEventListener('click', function(){
+        rollUp();
+    })
+}
 
 
     /* FORM */
