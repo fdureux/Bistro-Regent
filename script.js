@@ -92,3 +92,16 @@ $(window).scroll(function(){
       }
     });
   });
+
+// /*SCROLL TOP BUTTON*/
+const scrollTopBtn = document.getElementById('scroll_top');
+const rootElement = document.documentElement;
+
+function scrollTop(){
+    rootElement.scrollTo({
+        top: 0,
+        behavior : "smooth"
+    })
+}
+
+scrollTopBtn.addEventListener('click', scrollTop);
