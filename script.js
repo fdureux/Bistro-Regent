@@ -68,9 +68,9 @@ const form = document.getElementById('form');
 
 form.onsubmit = function (){
     if (select.value === "reservation"){
-        alert (`Votre réservation du ${date.value} à ${time.value} pour ${nbPers.value} personnes a bien été reçue.\nConfirmation envoyée à l'adresse ${email.value}`)
+        alert (`Votre réservation du ${date.value} à ${time.value} pour ${nbPers.value} personnes a bien été reçue.\nConfirmation envoyée à l'adresse : ${email.value}`)
     }else if (select.value === "other"){
-        alert (`Votre ${chooseMotif.value} à bien été reçu.`)
+        alert (`Votre ${chooseMotif.value} à bien été reçue.`)
     }else if (select.value === "reclamation"){
         alert(`Votre réclamation a bien été reçue.`)
     }else{
