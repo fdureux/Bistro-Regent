@@ -593,6 +593,7 @@ label {
     border-right: 1px solid var(--dark);
     border-bottom-right-radius: 5px;
     font-size: .8rem;
+    width: 33%;
 }
 
 #choose_motif{
@@ -860,6 +861,5 @@ label {
     form{
         grid-template-columns: 20rem;
     }
-
 }
 
